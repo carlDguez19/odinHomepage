@@ -1,3 +1,3 @@
 import { hello } from "./tester";
-import "./styles.css";
+import "../../src/css/styles.css";
 hello();
