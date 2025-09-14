@@ -1,12 +1,14 @@
+@import url("modernReset.css");
+
 html{
   font-size: 24px;
 }
-header, .mainProjectSection{ /*header*/
+header, main, footer{ /*header*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 25px;
   /* background-color: #f8f8f8;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
 }
@@ -15,13 +17,23 @@ h1{
   text-align: center;
 }
 
-.heroImgContainer, .projectCard {
+h2{
+  font-size: 1.1em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.heroImgContainer{
+  padding-top: 25px;
+}
+
+.heroImgContainer, .projectCard, .footerImgContainer {
   min-width: 300px;
   max-width: 600px;
   border-radius: 15px;
 }
 
-.heroImg{
+.heroImg, .footerImg{
   width: 100%;
   object-fit: cover;
 }
@@ -30,22 +42,71 @@ h1{
   line-height: 2;
 }
 
-.heroSocialMedia, .projectAccessIcons {
+.mainProjectsSection{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.heroSocialMedia, .projectAccessIcons, .footerSocialMedia{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 30px;
+  width: 25px;
   gap: 15px;
 }
 
-.projectTextContainer, .projectCard{
+.projectsTitle{
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}
+
+.projectTxtContainer, .projectCard{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 15px;
   text-align: center;
 }
-.test{
-  border: 25px solid blue;
+
+.projectTxtContainer{
+  background-color: lightgray;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 5px 20px #333;
+}
+
+.projectDescription, .footerImgContainer{
+  margin: 0;
+}
+
+.projectImg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  border-radius: 15px 15px 0 0;
+  background-color: darkcyan;
+  box-shadow: 0 5px 20px #333;
+}
+
+.projectCard {
+  min-width: 250px;
+  max-width: 400px;
+}
+
+footer{
+  background-color: darkcyan;
+  margin-top: 2em;
+}
+
+footer h2{
+  margin-top: 15px;
+}
+
+.footerSocialMedia{
+  margin-bottom: 15px;
 }
