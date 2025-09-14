@@ -1,14 +1,51 @@
 html{
   font-size: 24px;
 }
+header, .mainProjectSection{ /*header*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  /* background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+}
 
-.heroImgContainer {
+h1{
+  text-align: center;
+}
+
+.heroImgContainer, .projectCard {
   min-width: 300px;
-  max-width: 50vw;
+  max-width: 600px;
   border-radius: 15px;
 }
 
 .heroImg{
   width: 100%;
   object-fit: cover;
+}
+
+.aboutMeTxt{
+  line-height: 2;
+}
+
+.heroSocialMedia, .projectAccessIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  gap: 15px;
+}
+
+.projectTextContainer, .projectCard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  text-align: center;
+}
+.test{
+  border: 25px solid blue;
 }
