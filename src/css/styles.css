@@ -3,14 +3,17 @@
 html{
   font-size: 24px;
 }
-header, main, footer{ /*header*/
+
+body{
+  overflow-x: hidden;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header, main, footer{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 0 25px;
-  /* background-color: #f8f8f8;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
 }
 
 h1{
@@ -38,6 +41,34 @@ h2{
   object-fit: cover;
 }
 
+nav a{
+  display: inline-block;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+nav a:hover{
+  color: antiquewhite;
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+nav{
+  width: 150%;
+  background-color: darkcyan;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  align-items: center;
+  text-align: center;
+}
+
 .aboutMeTxt{
   line-height: 2;
 }
@@ -56,6 +87,12 @@ h2{
   align-items: center;
   width: 25px;
   gap: 15px;
+}
+
+.heroSocialMedia img:hover, .projectAccessIcons img:hover, .footerSocialMedia img:hover{
+  transform: scale(1.4);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .projectsTitle{
@@ -81,6 +118,9 @@ h2{
 .projectDescription, .footerImgContainer{
   margin: 0;
 }
+.footerImgContainer{
+  width: 120%;
+}
 
 .projectImg{
   display: flex;
@@ -101,12 +141,16 @@ h2{
 footer{
   background-color: darkcyan;
   margin-top: 2em;
+  height: auto;
 }
-
+footer img{
+  display: block;
+}
 footer h2{
   margin-top: 15px;
 }
 
 .footerSocialMedia{
+  margin-top: 15px;
   margin-bottom: 15px;
 }

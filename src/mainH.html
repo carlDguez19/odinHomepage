@@ -8,6 +8,12 @@
   <body>
     <header>
       <div class="heroImgContainer"><img class="heroImg" src="/src/pics/heroMain.jpg" alt="Carlos Dominguez"></div>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
       <div class="heroAboutMe">
         <h1>About Me</h1>
         <p class = "aboutMeTxt">
@@ -21,21 +27,21 @@
         </p>
       </div>
       <div class="heroSocialMedia">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Open Carlos' github"/>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="Open Carlos' linkedIn"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="github" aria-label="Carlos' github"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="linkedIn" aria-label="Carlos' linkedIn"/>
       </div>
     </header>
     <main>
       <section class="mainProjectsSection">
-        <h1 class="projectsTitle">Projects</h1>
+        <h1 class="projectsTitle" id="projects">Projects</h1>
         <div class="projectCard">
           <!-- <img class="projectImg" src="/src/pics/placeholder.png" alt=""> -->
           <div class="projectImg">PROJECT HERE</div>
           <div class="projectTxtContainer">
             <h2>Project Title</h2>
             <div class="projectAccessIcons">
-              <img class="gitProject" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Open project on Github"/>
-              <img class="openProject" src="/src/pics/openIcon.png" alt="Open Project">
+              <img class="gitProject" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="project Github" aria-label="open project on github"/>
+              <img class="openProject" src="/src/pics/openIcon.png" alt="Open Project" aria-label="open project"/>
             </div>
             <p class="projectDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
           </div>
@@ -46,8 +52,8 @@
           <div class="projectTxtContainer">
             <h2>Project Title</h2>
             <div class="projectAccessIcons">
-              <img class="gitProject" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Open project on Github"/>
-              <img class="openProject" src="/src/pics/openIcon.png" alt="Open Project">
+              <img class="gitProject" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="project Github" aria-label="open project on github"/>
+              <img class="openProject" src="/src/pics/openIcon.png" alt="Open Project" aria-label="open project"/>
             </div>
             <p class="projectDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
           </div>
@@ -58,8 +64,8 @@
           <div class="projectTxtContainer">
             <h2>Project Title</h2>
             <div class="projectAccessIcons">
-              <img class="gitProject" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Open project on Github"/>
-              <img class="openProject" src="/src/pics/openIcon.png" alt="Open Project">
+              <img class="gitProject" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="project Github" aria-label="open project on github"/>
+              <img class="openProject" src="/src/pics/openIcon.png" alt="Open Project" aria-label="open project"/>
             </div>
             <p class="projectDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
           </div>
@@ -67,17 +73,18 @@
       </section>
     </main>
     <footer>
-      <div class="footerContact">
-        <h1>Contact Me</h1>
-        <p class="contactTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-        <p class="contactAddress">1234 Random Road<br>Random Town, Randopolis, 12345</p>
-        <p class="contactPhone">123-456-7890<br>someemail@email.com</p>
-      </div>  
+      <h1 id="contact">Contact Me</h1>
+      <p class="contactTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+      <address>
+        1234 Random Road<br>Random Town, Randopolis, 12345<br>
+        123-456-7890<br>
+        <a class="contactEmail" href="mailto:someemail@email.com">someemail@email.com</a>
+      </address>
       <div class="footerSocialMedia">
-        <img class="gitProject" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Open project on Github"/>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="Open Carlos' linkedIn"/>
+        <img class="gitProject" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Github" aria-label="Carlos' github"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="linkedIn" aria-label="Carlos' linkedIn"/>
       </div>
+      <div class="footerImgContainer"><img class="footerImg" src="/src/pics/footerImg.jpg" alt=""></div>
     </footer>
-    <div class="footerImgContainer"><img class="footerImg" src="/src/pics/footerImg.jpg" alt=""></div>
   </body>
 </html>
