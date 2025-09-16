@@ -25,6 +25,12 @@ h2{
   margin-top: 0;
   margin-bottom: 10px;
 }
+.heroContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .heroImgContainer{
   padding-top: 25px;
@@ -170,21 +176,26 @@ footer h2{
   header{
     background-color: darkcyan;
     background: linear-gradient(to bottom, darkcyan 50%, white 100%);
+    padding: 20px 0;
+  }
+  .heroContent{
+    position: relative;
   }
   .heroImgContainer{
     width: 450px;
-    transform: translateX(-30%);
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 2;
   }
   .heroAboutMe{
     display: grid;
     grid-template-columns: 250px 250px;
     grid-template-rows: auto auto;
-    position: relative;
     background-color: whitesmoke;
     padding: 15px;
     border-radius: 15px;
-    transform: translateY(-45%);
+    transform: translateY(15%);
     margin-left: 190px;
     box-shadow: 0 5px 20px #333;
   }
@@ -205,7 +216,7 @@ footer h2{
     grid-row: 2/3;
   }
   .heroSocialMedia{
-    margin-top: -200px;
+    margin-top: 150px;
   }
   .mainProjectsSection{
     grid-template-columns: repeat(2, 1fr);
@@ -230,24 +241,45 @@ footer h2{
 }
 
 @media (min-width: 1024px){
+   html{
+    font-size: 28px;
+  }
   .heroContent{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 20px;
     margin-bottom: 300px;
-  }
-  .heroAboutMe{
-    display: block;
-    max-width: 650px;
-    margin: 0 auto;
-    padding: 25px;
-    transform: translateY(0%);
+    width: 100%;
   }
   .heroImgContainer{
-    max-width: 1000px;
-    transform: translateX(0%);
+    position: relative;
     z-index: 2;
+    margin: 0;
+    min-width: 500px;
+    max-width: 550px;
+  }
+  .heroAboutMe{
+    display: inline-block;
+    min-width: 480px;
+    max-width: 700px;
+    margin-left: 0;
+    transform: translateY(0);
+    margin-top: 50px;
+  }
+   .heroSocialMedia{
+    margin-top: -230px;
+    margin-bottom: 25px;
+  }
+   .mainProjectsSection{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .projectCard{
+    max-width: 500px;
+  }
+  footer{
+    align-items: center;
+    justify-content: center;
   }
 }
